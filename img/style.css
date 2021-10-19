@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,900|Lato:300,400,700&display=swap');
+:root {
+    --primaryViolet: #5e42a6;
+    --navColor: #312450;
+    --firstBg: #5052b5;
+    --secondBg: #4c4eac;
+    --thirdBg: #484aa3;
+    --fourthBg: #b74e91;
+    --fifthBg: #5e42a6;
+    --footerBg: #493382;
+    --white: #fff;
+    --border: #765eb3;
+    --lightGray: rgba(211, 211, 211,.7);
+    --borderLightGray: rgba(211, 211, 211,.3);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+h1,h2,h3, h4 {
+    font-family: 'Barlow', sans-serif;
+}
+
+button{
+    background: transparent;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 20px 45px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+
+button:hover{
+    transition: .3s ease;
+    background: rgba(255,255,255,.3);
+}
+
+/******************
+nav
+******************/
+nav {
+    width: 25%;
+    float: left;
+    background: var(--navColor);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    position: fixed;
+}
+
+nav img{
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px 50px 20px 20px;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: .8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--border);
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    color: var(--lightGray);
+    border-bottom: 2px solid var(--fourthBg);
+    transition: .4s ease;
+}
+
+nav ul .icons a{
+    font-size: 1.6rem;
+    display: inline;
+    margin: 10px 0 10px 10px;
+    border: none;
+}
+
+nav ul .icons a:hover{
+    color: var(--fourthBg);
+    border: none;
+}
+
+/******************
+main
+******************/
+main{
+    width: 75%;
+    float: right;
+}
+
+/******************
+header
+******************/
+
+header{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-image:linear-gradient(rgba(94, 66, 166, 0.9), rgba(94, 66, 166, 0.9)), url(circle.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header h1{
+    color: var(--white);
+    font-size: 4rem;
+}
+
+header p{
+    color: var(--lightGray);
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 30px 0;
+}
+
+/******************
+sections
+******************/
+
+.webDev{
+    height: 50vh;
+    display: flex;
+}
+
+
+.img{
+    flex: 1;
+}
+
+.text{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.webDev .img{
+    background-image: url(services1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.webDev .text {
+    background: var(--firstBg);
+}
+
+.mobDev .img {
+    background-image: url(services2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.mobDev .text {
+    background: var(--secondBg);
+}
+.intMarketing .img {
+    background-image: url(services3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.intMarketing .text {
+    background: var(--thirdBg);
+}
+.text h3 {
+    font-size: 2rem;
+    color: var(--white);
+}
+.text p {
+    color: var(--lightGray);
+    padding: 20px 0;
+}
